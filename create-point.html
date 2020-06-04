@@ -22,41 +22,69 @@
             <h1>Cadastro de ponto de coleta</h1>
             <fieldset>
                 <legend>
-                    <h2>Dados de entidade</h2>
+                    <h2>Dados da entidade</h2>
                 </legend>
                 <div class="field">
                     <label for="name">Nome da entidade</label>
-                    <input type="text" name="name" id="">
+                    <input type="text" name="name" id="" required>
                 </div>
                 <div class="field-group">
                     <div class="field">
                         <label for="address">Endereço</label>
-                        <input type="text" name="address" id="">
+                        <input type="text" name="address" id="" required>
                     </div>
                     <div class="field">
                         <label for="numero">Número/Complemento</label>
-                        <input type="text" name="numero" id="">
+                        <input type="text" name="numero" id="" required>
                     </div>
                 </div>
                 <div class="field-group">
                     <div class="field">
                         <label for="state">Estado</label>
-                        <select name="state" id="">
+                        <select name="state" id="" required>
                             <option value="">Selecione o Estado</option>
                         </select>
                     </div>
                     <div class="field">
                         <label for="city">Cidade</label>
-                        <select name="city" id="" disabled>
+                        <select name="city" id="" disabled required> 
                             <option value="">Selecione a Cidade</option>
                         </select>
                     </div>
                 </div>
+                <input type="hidden" name="uf">
             </fieldset>
             <fieldset>
                 <legend>
                     <h2>Itens de coleta</h2>
                 </legend>
+                <div class="itens-grind">
+                    <li data-id ="1">
+                        <img src="./assets/lampadas.svg" alt="Lampadas">
+                        <span>Lâmpadas</span>
+                    </li>
+                    <li data-id ="2">
+                        <img src="./assets/baterias.svg" alt="baterias">
+                        <span>Pilhas/Baterias</span>
+                    </li>
+                    <li data-id ="3">
+                        <img src="./assets/papeis-papelao.svg" alt="papeis">
+                        <span>Papéis e Papelão</span>
+                    </li>
+                    <li data-id ="4">
+                        <img src="./assets/eletronicos.svg" alt="eletronicos">
+                        <span>Resíduos Eletrônicos</span>
+                    </li>
+                    <li data-id ="5">
+                        <img src="./assets/organicos.svg" alt="organicos">
+                        <span>Resíduos Orgânicos</span>
+                    </li>
+                    <li data-id ="6">
+                        <img src="./assets/oleo.svg" alt="oleo">
+                        <span>Óleo de Cozinha</span>
+                    </li>
+                </div>
+                <input type="hidden" name="itens">
             </fieldset>
             <button type="submit">Cadastrar ponto de coleta</button>
         </form>
