@@ -1,0 +1,24 @@
+{
+  "name": "projeto",
+  "version": "1.0.0",
+  "description": "- [x] Aula1 - [x] Aula2 - [x] Aula3 - [ ] Aula4 - [ ] Aula5",
+  "main": "./src/server.js",
+  "scripts": {
+    "start": "nodemon src/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GFNapoli/NextLevelWeek1.0.git"
+  },
+  "keywords": [],
+  "author": "Gustavo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GFNapoli/NextLevelWeek1.0/issues"
+  },
+  "homepage": "https://github.com/GFNapoli/NextLevelWeek1.0#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "nodemon": "^2.0.4"
+  }
+}
