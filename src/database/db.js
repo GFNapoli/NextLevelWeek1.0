@@ -59,17 +59,17 @@ db.serialize(()=>{
     // }
     // db.all(consult, afterConsultData)
 
-// //     //deletar dados
+    //deletar dados
 
-// //     const delItem = `
-// //         DELETE FORM places WHERE id = ?
-// //     `
-// //     function afterDelItem(err){
-// //         if(err){
-// //             return console.log('erro')
-// //         }
-// //         console.log('Registro deletado com sucesso!')
-// //     }
+    // const delItem = `
+    //     DELETE FROM places WHERE id = ?
+    // `
+    // function afterDelItem(err){
+    //     if(err){
+    //         return console.log('erro')
+    //     }
+    //     console.log('Registro deletado com sucesso!')
+    // }
 
-// //     db.run(delItem,valuesDel,afterDelItem)
+    // db.run(delItem,[7],afterDelItem)
  })

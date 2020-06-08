@@ -68,7 +68,6 @@ server.get('/search', (req,res)=>{
             return console.log('erro')
         }
         let total = rows.length
-        console.log(total)
         return res.render('search-results.html',{places: rows, total: total})
     })
 })
